@@ -1,26 +1,38 @@
 <template>
-    <v-app>
-        <v-main>
-            <!-- <SearchBook /> -->
-            <Preview />
-        </v-main>
-    </v-app>
+    <div>
+        <router-view />
+        <v-footer padless absolute>
+            <v-col class="text-center" cols="12">
+                <div id="app">
+                    <div id="nav">
+                        <router-link to="/">Home</router-link> |
+                        <router-link to="/booklist">List</router-link>
+                    </div>
+                </div>
+            </v-col>
+        </v-footer>
+    </div>
 </template>
 
-<script>
-// import SearchBook from "./components/SearchBook";
-import Preview from "./components/Preview";
+<style lang="scss">
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
 
-export default {
-    name: "App",
+#nav {
+    padding: 30px;
 
-    components: {
-        // SearchBook,
-        Preview,
-    },
+    a {
+        font-weight: bold;
+        color: #2c3e50;
 
-    data: () => ({
-        //
-    }),
-};
-</script>
+        &.router-link-exact-active {
+            color: #3949ab;
+        }
+    }
+}
+</style>
