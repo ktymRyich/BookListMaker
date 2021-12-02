@@ -1,17 +1,19 @@
 <template>
-    <div>
-        <router-view />
-        <v-footer padless absolute>
-            <v-col class="text-center" cols="12">
-                <div id="app">
-                    <div id="nav">
-                        <router-link to="/">Home</router-link> |
-                        <router-link to="/booklist">List</router-link>
+    <v-app>
+        <div style="height: 100%">
+            <router-view />
+            <v-footer padless>
+                <v-col class="text-center" cols="12">
+                    <div id="app">
+                        <div id="nav">
+                            <router-link to="/">Home</router-link> |
+                            <router-link to="/booklist">List</router-link>
+                        </div>
                     </div>
-                </div>
-            </v-col>
-        </v-footer>
-    </div>
+                </v-col>
+            </v-footer>
+        </div>
+    </v-app>
 </template>
 
 <style lang="scss">
