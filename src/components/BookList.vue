@@ -99,13 +99,13 @@ function toCsv(books) {
         let oneData =
             isbns[i] +
             "," +
-            book.title.replace(/,/g, "、") +
+            book.title.replace(/,/g, "、").replace(/\r?\n/g, "") +
             "," +
-            book.genre.replace(/,/g, "、") +
+            book.genre.replace(/,/g, "、").replace(/\r?\n/g, "") +
             "," +
-            book.intro.replace(/,/g, "、") +
+            book.intro.replace(/,/g, "、").replace(/\r?\n/g, "") +
             "," +
-            book.image.replace(/,/g, "、") +
+            book.image.replace(/,/g, "、").replace(/\r?\n/g, "") +
             "\n";
         csv += oneData;
     }
