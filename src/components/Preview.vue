@@ -74,7 +74,7 @@ export default {
 
                 for (let i in res.data[0].onix.CollateralDetail.TextContent) {
                     let j = res.data[0].onix.CollateralDetail.TextContent[i];
-                    if (j.Text != null) {
+                    if (j.TextType === "03") {
                         this.intro = j.Text;
                         break;
                     }
