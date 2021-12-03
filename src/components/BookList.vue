@@ -1,14 +1,5 @@
 <template>
     <v-container fluid fill-height>
-        <!-- <v-row justify="center">
-            <v-col align="center" style="background-color: red">{{
-                books
-            }}</v-col>
-        </v-row>
-        <v-row>
-            <v-col align="center">sample</v-col>
-            <v-col align="center">sample</v-col>
-        </v-row> -->
         <v-row dense align="start">
             <v-col v-for="(item, i) in books" :key="i" cols="12">
                 <v-card outlined>
