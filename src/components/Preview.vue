@@ -98,7 +98,7 @@ export default {
             };
             axios
                 .put(
-                    "https://selectedbookslist-default-rtdb.firebaseio.com/books/" +
+                    "https://booklist-2212d-default-rtdb.firebaseio.com/books/" +
                         bookNum +
                         ".json",
                     bookData

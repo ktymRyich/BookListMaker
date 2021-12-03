@@ -114,7 +114,7 @@ export default {
     mounted: function () {
         axios
             .get(
-                "https://selectedbookslist-default-rtdb.firebaseio.com/books.json"
+                "https://booklist-2212d-default-rtdb.firebaseio.com/books.json"
             )
             .then((res) => {
                 this.books = res.data;
@@ -145,7 +145,7 @@ export default {
             }
 
             let url =
-                "https://selectedbookslist-default-rtdb.firebaseio.com/books/";
+                "https://booklist-2212d-default-rtdb.firebaseio.com/books/";
             let delUrl = url + isbn + ".json";
             axios
                 .delete(delUrl)
