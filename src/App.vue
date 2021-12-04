@@ -1,8 +1,7 @@
 <template>
     <v-app>
         <div style="height: 100%">
-            <router-view />
-            <v-footer padless>
+            <v-app-bar fixed flat>
                 <v-col class="text-center" cols="12">
                     <div id="app">
                         <div id="nav">
@@ -11,7 +10,8 @@
                         </div>
                     </div>
                 </v-col>
-            </v-footer>
+            </v-app-bar>
+            <router-view />
         </div>
     </v-app>
 </template>
