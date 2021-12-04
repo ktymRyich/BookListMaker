@@ -3,7 +3,11 @@
         <v-row align="center">
             <v-col align="center">
                 <v-card flat max-width="400px">
-                    <v-text-field outlined v-model="bookNum"></v-text-field>
+                    <v-text-field
+                        outlined
+                        v-model="bookNum"
+                        @keydown.enter="check"
+                    ></v-text-field>
                     <v-card-actions>
                         <v-container>
                             <v-row>
