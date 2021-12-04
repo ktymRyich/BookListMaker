@@ -20,11 +20,6 @@
                                 <div v-text="i"></div>
                             </v-card-subtitle>
                         </v-col>
-                        <v-col cols="2">
-                            <v-card-subtitle>
-                                <div v-text="item.genre"></div>
-                            </v-card-subtitle>
-                        </v-col>
                         <v-col>
                             <v-card-text>
                                 <div v-text="item.intro"></div>
