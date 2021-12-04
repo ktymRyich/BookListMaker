@@ -83,7 +83,7 @@ import axios from "axios";
 
 function toCsv(books) {
     let csv = "";
-    let header = "isbn, title, genre, text, image" + "\n";
+    let header = "isbn, title, text, image" + "\n";
     csv += header;
     let isbns = Object.keys(books);
     for (let i = 0; i < isbns.length; i++) {
@@ -92,8 +92,6 @@ function toCsv(books) {
             isbns[i] +
             "," +
             book.title.replace(/,/g, "、").replace(/\r?\n/g, "") +
-            "," +
-            book.genre.replace(/,/g, "、").replace(/\r?\n/g, "") +
             "," +
             book.intro.replace(/,/g, "、").replace(/\r?\n/g, "") +
             "," +
