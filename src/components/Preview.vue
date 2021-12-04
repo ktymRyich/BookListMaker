@@ -1,32 +1,26 @@
 <template>
     <v-container style="margin-top: 80px">
-        <v-row class="mt-16 mx-0">
+        <v-row class="mt-10 mx-0">
             <v-col cols="4">
                 <v-img :src="bookFace"></v-img>
             </v-col>
             <v-spacer></v-spacer>
             <v-col cols="7" class="text-left pt-3">
-                <v-row>
+                <v-row class="mb-4 mt-1">
                     <div>
-                        <h4>タイトル</h4>
-                        <h2>{{ title }}</h2>
-                    </div>
-                </v-row>
-                <v-row style="margin: 40px 0px 40px -12px">
-                    <div>
-                        <h4>ジャンル</h4>
-                        <h2>{{ genre }}</h2>
+                        <h5>タイトル</h5>
+                        <h4>{{ title }}</h4>
                     </div>
                 </v-row>
                 <v-row>
                     <div>
-                        <h4>紹介文</h4>
-                        <h2>{{ intro }}</h2>
+                        <h5>紹介文</h5>
+                        <h4>{{ intro }}</h4>
                     </div>
                 </v-row>
             </v-col>
         </v-row>
-        <v-row style="margin-top: 40px; margin-bottom: 100px">
+        <v-row class="mt-10 mb-16">
             <v-col cols="12" align="center">
                 <v-btn
                     color="#3949AB"
