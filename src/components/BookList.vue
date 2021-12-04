@@ -1,6 +1,7 @@
 <template>
     <v-container fluid fill-height>
         <v-row dense align="start" class="mt-16">
+            <v-col cols="12"> books: {{ Object.keys(books).length }} </v-col>
             <v-col v-for="(item, i) in books" :key="i" cols="12">
                 <v-card outlined>
                     <div class="d-flex flex-no-wrap text-left">
