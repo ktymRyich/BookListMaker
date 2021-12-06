@@ -1,5 +1,5 @@
 <template>
-    <v-container style="margin-top: 80px">
+    <v-container style="margin-top: 80px" dense>
         <v-row class="mt-10 mx-0">
             <v-col cols="4">
                 <v-img :src="bookFace"></v-img>
@@ -14,8 +14,8 @@
                 </v-row>
                 <v-row>
                     <div>
-                        <h5>紹介文</h5>
-                        <h4>{{ intro }}</h4>
+                        <h5 class="text-subtitle2">紹介文</h5>
+                        <h4 class="text-body-2 text-md-body-1">{{ intro }}</h4>
                     </div>
                 </v-row>
             </v-col>
