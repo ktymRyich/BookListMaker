@@ -5,39 +5,51 @@
             <v-col v-for="(item, i) in books" :key="i" cols="12">
                 <v-card outlined>
                     <div class="d-flex flex-no-wrap text-left">
-                        <v-avatar class="ma-3" size="150" tile>
-                            <v-container fill-height>
-                                <v-row justify="center">
+                        <v-row no-gutters>
+                            <v-col cols="3" md="2">
+                                <v-avatar
+                                    class="ma-3"
+                                    tile
+                                    size="80"
+                                    style="height: 180"
+                                >
                                     <v-img :src="item.image"></v-img>
+                                </v-avatar>
+                            </v-col>
+                            <v-col>
+                                <v-row>
+                                    <v-col cols="12" class="mt-n2">
+                                        <v-card-title>
+                                            <div
+                                                v-text="item.title"
+                                                class="text-h6"
+                                            ></div>
+                                        </v-card-title>
+                                        <v-card-subtitle>
+                                            <div v-text="i"></div>
+                                        </v-card-subtitle>
+                                    </v-col>
+                                    <v-col cols="12" class="mt-n11">
+                                        <v-card-text>
+                                            <div v-text="item.intro"></div>
+                                        </v-card-text>
+                                    </v-col>
+                                    <v-col cols="12" class="mt-n9">
+                                        <v-row justify="end">
+                                            <v-card-actions class="mr-5 mb-4">
+                                                <v-btn
+                                                    text
+                                                    color="error"
+                                                    @click="onClickDelete(item)"
+                                                >
+                                                    削除ぉ
+                                                </v-btn>
+                                            </v-card-actions>
+                                        </v-row>
+                                    </v-col>
                                 </v-row>
-                            </v-container>
-                        </v-avatar>
-                        <v-col cols="2">
-                            <v-card-title>
-                                <div v-text="item.title"></div>
-                            </v-card-title>
-                            <v-card-subtitle>
-                                <div v-text="i"></div>
-                            </v-card-subtitle>
-                        </v-col>
-                        <v-col>
-                            <v-card-text>
-                                <div v-text="item.intro"></div>
-                            </v-card-text>
-                        </v-col>
-                        <v-col>
-                            <v-card-actions>
-                                <template>
-                                    <v-btn
-                                        text
-                                        color="error"
-                                        @click="onClickDelete(item)"
-                                    >
-                                        削除ぉ
-                                    </v-btn>
-                                </template>
-                            </v-card-actions>
-                        </v-col>
+                            </v-col>
+                        </v-row>
                     </div>
                 </v-card>
             </v-col>
