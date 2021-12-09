@@ -6,7 +6,10 @@
                     <div id="app">
                         <div id="nav">
                             <router-link to="/">Home</router-link> |
-                            <router-link to="/booklist">List</router-link>
+                            <router-link to="/booklist">List</router-link> |
+                            <router-link to="/rakuten"
+                                >Rakutenカードマァぁああん</router-link
+                            >
                         </div>
                     </div>
                 </v-col>

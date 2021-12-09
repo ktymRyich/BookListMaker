@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Preview from "../components/Preview.vue";
 import SearchBook from "../components/SearchBook.vue";
 import BookList from "../components/BookList.vue";
+import Isbn500 from "../components/Isbn500.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const routes = [
         path: "/booklist",
         name: "BookList",
         component: BookList,
+    },
+    {
+        path: "/rakuten",
+        name: "Isbn500",
+        component: Isbn500,
     },
 ];
 
