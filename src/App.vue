@@ -10,6 +10,10 @@
                             <router-link to="/rakuten"
                                 >Rakutenカードマァぁああん</router-link
                             >
+                            |
+                            <router-link to="/autosearch"
+                                >Caption getter</router-link
+                            >
                         </div>
                     </div>
                 </v-col>

@@ -4,6 +4,7 @@ import Preview from "../components/Preview.vue";
 import SearchBook from "../components/SearchBook.vue";
 import BookList from "../components/BookList.vue";
 import Isbn500 from "../components/Isbn500.vue";
+import AutoSearchBook from "../components/AutoSearchBook.vue";
 
 Vue.use(VueRouter);
 
@@ -36,6 +37,11 @@ const routes = [
         path: "/rakuten",
         name: "Isbn500",
         component: Isbn500,
+    },
+    {
+        path: "/autosearch",
+        name: "AutoSearcher",
+        component: AutoSearchBook,
     },
 ];
 
