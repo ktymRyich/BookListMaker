@@ -139,7 +139,7 @@ export default {
             counter: 0,
             genres: Object.keys(allIsbn),
             nextCounter: 0,
-            numberOfBooksInOneRequest: 40, // 一クリックで各ジャンルからとってくる値。リクエスト数は*7（ジャンル数）
+            numberOfBooksInOneRequest: 500, // 一クリックで各ジャンルからとってくる値。リクエスト数は*7（ジャンル数）
             finishCounter: 0, // ここ変えて、続きからにできる。前回の終わった時に画面下部に表示されていた値
         };
     },
