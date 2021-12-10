@@ -1,24 +1,18 @@
 # sample-app
 
-## Project setup
-```
-yarn install
-```
+## rakuten ページ使い方
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+欲しいジャンルをクリック
+「追加で取得」ボタンで 90 件ずつ読み込めるが、連打するとサーバーからエラー帰ってきてデータを正常に取得できないため、感覚を開けて押すこと。
+ミスってエラー出たらジャンル選択からやり直し
 
-### Compiles and minifies for production
-```
-yarn build
-```
+ダウンロードは一ジャンルずつ。ダウンロードしない状態で別のジャンルを押すと api から引っ張ってきたデータ消えるので注意。
 
-### Lints and fixes files
-```
-yarn lint
-```
+## caption getter 使い方
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+取得ボタンを一回押し、その度にダウンロード、リロードすべし。（メモリ足りんくなる）
+一度のダウンロードで 500 件取得する。
+2 回目以降は、今何回目かをプログラムの方で変更する必要がある。
+autosearchbook.vue の 142 行目を参照。
+
+バラバラにダウンロードした csv は手動で繋げるべし。
